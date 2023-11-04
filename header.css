@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Practice-Project-2/background-image.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 99vw;
+  height: 30vh;
+  background-color: red;
+}
+
+.header div {
+  color: white;
+}
+
+.left-header i {
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
+
+  
+
+@media (max-width: 967px) {
+  
+  .left-header i{
+    display: block;
+  }
+
+  .middle-header {
+    display: flex;
+    position: absolute;
+    top: 17%;
+    left: 42%;
+    padding: 35px 1%;
+    width: 25vw;
+    background: #1f242d;
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .middle-header.active{
+    display: block;
+  }
+
+  .middle-header a {
+    /* margin: 10px 0; */
+  }
+}
+@media (max-width: 432px) {
+   .header{
+    width: 100vw;
+   }
+   .left-header .logo-image{
+    height: 20vh;
+   }
+}
+@media (max-width: 304px) {
+   .header{
+    width: 100vw;
+   }
+   .left-header i{
+    font-size: 15px;
+   }
+}
+@media (max-width: 280px) {
+   .header{
+    width: 100vw;
+   }
+   .left-header i {
+    margin-right: 40px;
+   }
+}

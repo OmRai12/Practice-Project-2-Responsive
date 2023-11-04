@@ -1,0 +1,47 @@
+.middle-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 50vw;
+  /* background-color: blue; */
+  padding: 0px 0px 0px 100px;
+}
+
+
+
+
+
+
+.drop-down div:hover{
+  background-color: #fff;
+  color: #000;
+}
+.right-header div{
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.More-Recipes-drop-down-menu:hover{
+  background-color: white;
+  color: black;
+}
+.drop-down{
+   position: relative;
+   top: 10px;
+}
+.drop-down-Sandwich{
+  position: relative;
+  top: 10px;
+}
+.drop-down{
+  display: none;
+}
+.right-header:hover .drop-down{
+  display: block;
+}
+.more-receipes:hover{
+  background-color: white;
+  color: black;
+}
